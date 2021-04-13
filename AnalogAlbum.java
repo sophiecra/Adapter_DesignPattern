@@ -1,7 +1,7 @@
 public interface AnalogAlbum {
-    public void play();
-    public void rewind();
-    public void ffwd();
-    public void pause();
-    public void stopEject();
+    public String play();
+    public String rewind();
+    public String ffwd();
+    public String pause();
+    public String stopEject();
 }
