@@ -19,7 +19,7 @@ public class CD implements DigitalAlbum {
     public String playSong(int num) {
         if (num < songs.size() && num > 0) {
             currentIndex = num + 1;
-            return "Playing song" + num + ": " + songs.get(num);
+            return "Playing song" + (num + 1) + ": " + songs.get(num);
         } else {
             return "Not a valid song number";
         }
