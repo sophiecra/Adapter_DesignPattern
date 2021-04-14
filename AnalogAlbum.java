@@ -1,3 +1,7 @@
+/**
+ * Interface for the analog album 
+ * @author Sophie Crane
+ */
 public interface AnalogAlbum {
     public String play();
     public String rewind();
