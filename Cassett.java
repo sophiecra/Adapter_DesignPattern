@@ -12,13 +12,14 @@ public class Cassett implements AnalogAlbum {
     }
 
     public String play() {
-        return "Playing song " + (currentIndex + 1) + ": " + songs.get(currentIndex);
+        currentIndex++;
+        return "Playing song " + (currentIndex) + ": " + songs.get(currentIndex - 1);
     }
 
     public String rewind() {
         if (currentIndex > 0) {
             currentIndex--;
-            return "Rewinding to song " + (currentIndex + 1) + ": " + songs.get(currentIndex);
+            return "Rewinding to song " + (currentIndex + 1);
         } else {
             return "Fully Re-Wound";
         }
@@ -27,7 +28,7 @@ public class Cassett implements AnalogAlbum {
     public String ffwd() {
         if (currentIndex < songs.size()) {
             currentIndex++;
-            return "Forwarding to song " + (currentIndex + 1) + ": " + songs.get(currentIndex);
+            return "Forwarding to song " + (currentIndex + 1);
         } else {
             return "Forwarded to end of the cassett";
         }
