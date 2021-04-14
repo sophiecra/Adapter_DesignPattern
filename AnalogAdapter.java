@@ -6,15 +6,15 @@ public class AnalogAdapter implements AnalogAlbum{
     }
 
     public String play() {
-        return album.play();
+        return album.nextSong();
     }
 
     public String rewind() {
-        return album.rewind();
+        return album.prevSong();
     }
 
     public String ffwd() {
-        return album.ffwd();
+        return album.nextSong();
     }
 
     public String pause() {
@@ -22,6 +22,6 @@ public class AnalogAdapter implements AnalogAlbum{
     }
 
     public String stopEject() {
-        return album.stopEject();
+        return album.stop();
     }
 }

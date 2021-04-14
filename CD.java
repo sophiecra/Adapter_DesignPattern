@@ -43,7 +43,7 @@ public class CD implements DigitalAlbum {
         }
     }
 
-    public String stopEject() {
+    public String stop() {
         return "Stopping CD and ejecting";
     }
 
