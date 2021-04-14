@@ -43,11 +43,11 @@ public class CD implements DigitalAlbum {
         }
     }
 
-    public String stop() {
-        return "Pausing song " + currentIndex + ": " + songs.get(currentIndex);
+    public String stopEject() {
+        return "Stopping CD and ejecting";
     }
 
     public String pause() {
-
+        return "Pausing " + currentIndex + ": " + songs.get(currentIndex);
     }
 }
